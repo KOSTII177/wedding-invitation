@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Весільне запрошення</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      font-family: 'Cormorant Garamond', serif;
+      color: #000;
+      overflow-x: hidden;
+    }
+
+    .container { 
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 80px 20px;
+      text-align: center;
+      background-color: #fff;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .name {
+      font-size: 36px;
+      font-style: italic;
+      letter-spacing: 2px;
+      margin: 0;
+      opacity: 0;
+      animation: fadeUp 1s forwards;
+    }
+
+    .line {
+      width: 1px;
+      height: 80px;
+      background-color: #000;
+      margin: 25px auto;
+      opacity: 0;
+      animation: fadeUp 1s forwards;
+      animation-delay: 0.2s;
+    }
+
+    .date {
+      font-size: 64px;
+      font-weight: bold;
+      margin: 30px 0;
+      letter-spacing: 3px;
+      opacity: 0;
+      animation: fadeUp 1s forwards;
+      animation-delay: 0.4s;
+    }
+
+    .section {
+      margin-top: 80px;
+      opacity: 0;
+      animation: fadeUp 1s forwards;
+      animation-delay: 0.8s;
+    }
+
+    .text {
+      font-size: 22px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 40px;
+      letter-spacing: 1px;
+    }
+
+    .ivent_time {
+      margin-top: 30px;
+      font-size: 25px;
+      color: #333;
+      cursor: pointer;
+    }
+
+
+    .footer_ps {
+      padding: 12px 25px;
+      margin-top: 30px;
+      font-size: 18px;
+      color: #000;
+    }
+
+    .map-block {
+      margin-top: 60px;
+    }
+
+    .map-block h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .map-block iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+     .button-link {
+        display: inline-block;
+        padding: 12px 25px;
+        margin-top: 40px; /* Відступ зверху від карти або попереднього елемента */
+        font-size: 18px;
+        color: #000;
+        font-weight: bold;
+        background-color: #e6e0d4; /* Золотистий колір, що пасує до весільної тематики */
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .button-link:hover {
+        background-color: #d8d0c3;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .button-link:active {
+        background-color: #c9c0b1; /* Ще темніший при натисканні */
+        transform: translateY(0);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Animations */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .date { font-size: 42px; }
+      .name { font-size: 28px; }
+      .text { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <p class="name">ІВАННА</p>
+    <div class="line"></div>
+    <div class="date">11.10.25</div>
+    <div class="line"></div>
+    <p class="name">КОСТЯНТИН</p>
+
+    <div class="section">
+      <p class="text">Є події, які залишаються в памʼяті на все життя,</p>
+      <p class="text">і є люди, з якими хочеться розділити ці незабутні моменти.</p>
+
+      <p class="title">Запрошення на весілля</p>
+        <p class="title">Дорогі .....   .......</p>
+      <p class="text">Ми з радістю запрошуємо вас розділити з нами цей особливий день.</p>
+      <p class="text">Церемонія та святковий бенкет відбудуться у місті Коростишів,<br> ресторан “Чарівне озеро”.</p>
+
+      <p class="ivent_time">Початок о 14:00</p>
+
+
+      <p class="footer_ps">P.S. Не даруйте нам, будь ласка, квіти. Ми не встигнемо насолодитись їх красою. Візьміть пляшечку вашого улюбленого напою З побажаннями на яке свято нам її відкрити.</p>
+    </div>
+
+    <div class="map-block">
+      <h3>Точка геолокації:</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2437.6896270940065!2d29.096505589170693!3d50.31786034555527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c823f211ada6f%3A0x113d5249727dab60!2z0KfQsNGA0ZbQstC90LUg0L7Qt9C10YDQvg!5e1!3m2!1suk!2sua!4v1753085506386!5m2!1suk!2sua"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <!-- <a href="https://forms.gle/k9tQ7w5SAnSfcaQh9" target="_blank" class="button-link">Підтвердити присутність</a> -->
+    <a href="https://maps.app.goo.gl/NUBsrTfpXQA9SLXMA" target="_blank" class="button-link">Підтвердити присутність</a>
+  </div>
+
+</body>
+</html>
